@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    <link rel="stylesheet" href="./buy.css">
+    <script src="./buy.js" defer></script>
+</head>
+<body onload="finalbuy()">
+    <div id="imgcon"> 
+          <div id="fir">
+             <div id="prod">
+                 <input type="text" value="1" id="count">
+                 <img src="" alt="" id="pimage">
+                 <div id="addrem">
+                    <input type="button" value="Rem" onclick="dec()" id="dec">
+                    <input type="button" value="Add" onclick="inc()" id="inc">
+                 </div>
+             </div>
+             
+             <div id="tit">
+                <p id="title"></p>
+             </div>
+             <div id="pri">
+                <h1>₹</h1>
+                 <input type="text" id="price">
+             </div>
+          </div>
+          <div id="sec">
+            <div id="cod">
+                
+                <h5>COD</h5>
+                <input type="checkbox" name="" id="check">
+        
+            </div>
+            <h3>Enter Your Address Here</h3>
+            <input type="text" id="address" placeholder="Type Your Address Here">
+            <input type="button" value="Place Order" id="placeorder" onclick="orderplaced()">
+          </div>
+    </div>
+</body>
+</html>

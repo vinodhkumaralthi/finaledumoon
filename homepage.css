@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.4vw;
+} 
+ 
+#logo{
+    width: 50px;
+    position: absolute;
+    border-radius: 100%;
+}
+#navi{
+    width: 100%;
+    height: 70px;
+    color: white;
+    /* border: 1px solid red; */
+    /* background-color: #4E4E50; */
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    transition: all 0.5s;
+    
+}
+#navi:hover{
+    background-color: black;
+}
+ul{
+    padding-left: 20vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+li:nth-child(1)
+{
+    width:50px;
+}
+li:nth-child(1){
+   width: 60px;
+}
+li:nth-child(2)
+{
+    width: 60px;
+}
+li:nth-child(3)
+{
+    width: 80px;
+}
+li:nth-child(4)
+{
+    width: 90px;
+}
+
+li{
+    margin: 10px;
+    height: 3vw;
+    text-align: center;
+    list-style: none;
+    border-radius: 5px;
+   transition:all 0.2s;
+} 
+/* li:hover{
+    font-weight: bold;
+    color: aliceblue;
+    scale:1.1;
+} */
+#profDet{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: 2vw;
+    border-radius: 20px;
+    display: flex;
+    padding-top: 30px;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+#profimg{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+#profimgsrc{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#prof{
+    font-size: 20px;
+    font-weight: bold;
+}
+#slideshow{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#first{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+#second{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2c1acc;
+}
+footer{
+    width: 100vw;
+    height:auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.fot{
+    width: 400px;
+    height: 300px;
+    background-color:#cca8e9;
+    text-align: center;
+    border: 2px solid black; 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.fotlist{
+    
+    width: 60%;
+    height: 50%;
+   margin-top: 20px;
+    text-align: start;
+    /* background-color: white; */
+}
+.fotlist h5{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.flist{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+#newsletter{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(210, 23, 23);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+    box-shadow: 0px 0px 5px black;
+}
+.flist li{
+    width: 100%;
+
+}
+#newsletter #newsmail{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left :0px;
+    border: none;
+    outline: none;
+
+}
+#abt{
+    width: 200px;
+    height: 200px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background-color:#cadefc;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    justify-content: center;
+    text-shadow: -5px 5px 15px bisque;
+    box-shadow: 0px 0px 10px ;
+}
+#abtDet{
+    width: 60%;
+    height: 30%;
+    text-align: center;
+}
+#newsletter #join{
+  width: 20%;
+  height: 100%;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 0px;
+  background-color:black;
+  color: white;
+  font-weight: bold;
+}
+#sec1{
+    width: 100vw;
+    height: 100vh;
+    /* background: url(../asset/image/AlluArjun.jpg); */
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-color: black;
+    top: 0%;
+    /* position: absolute; */
+    overflow: hidden;
+    /* filter: brightness(50%); */
+    animation: trs 35s linear infinite;
+}
+@keyframes trs {
+    0%{
+        background: url(../media/images/r1.webp);
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+        filter: opacity(100%);
+    }
+    25%{
+        background: url(../media/images/r2.webp);
+        filter: opacity(0%);
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+    }
+    30%{
+        background: url(../media/images/r3.webp);
+        filter: opacity(100%);
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+    }
+    50%{
+        filter: opacity(0%);
+    }
+    75%{
+        background: url(../media/images/r4.png);
+        filter: opacity(100%);
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+    }
+    85%{
+        filter: opacity(0%);
+    }
+    100%{
+        background: url(../media/images/slideshow1.png);
+        filter: opacity(100%);
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+    }
+}
+#first{
+    position: relative;
+    background-color: black;
+    display: flex;
+    height: 162vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    row-gap: -10px;
+    padding-top: 5%;
+}
+#second{
+    background-color: rgb(28, 24, 24);
+    /* border: 2px solid red; */
+}
+aside{
+    width: 380px;
+    height: 430px;
+    /* border: 1px solid red; */
+    margin: -10px;
+    margin-left: 1%;
+    overflow: hidden;
+    position: relative;
+}
+.prdimg{
+    width: 380px;
+    height: 100%;
+    filter: brightness(80%);
+    transition: 2s;
+    overflow: hidden;
+}
+.prdimg:hover{
+    animation: prdzoom 10s linear;
+}
+@keyframes prdzoom {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+}
+#ul{
+    width: 0px;
+    height: 1.5px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.list:hover>#ul{
+    width: 90%;
+}
+.prdtxt{
+    color: white;
+    position: absolute;
+    font-size: 2.3vw;
+    bottom: 16%;
+    left: 5%;
+}
+.prdtxt2{
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+#second{
+    position: relative;
+    color: white;
+}
+#elmsec1{
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    left: 6%;
+    bottom: 25%;
+}
+#elmsec2{
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    left: 6%;
+    bottom: 35%;
+}
+#elmsec3{
+    width: 250px;
+    height: 80px;
+    color: white;
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+}
+.ulelm{
+    position: absolute;
+    left: 8%;
+    bottom: 50%;
+    font-size: 20px;
+}
+#ulforelm{
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+    left: 8%;
+    bottom: 40%;
+}
+.ulelm:hover+#ulforelm{
+    width: 280px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#ulforelmdup{
+    width: 280px;
+    height: 0.9px;
+    background-color: rgba(128, 128, 128, 0.801);
+    position: absolute;
+    left: 7%;
+    bottom: 40%;
+    border-radius: 10px;
+    transition: all 1s;
+}
+#home{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 4;
+    background-color: #cca8e9;
+    bottom: 30px;
+    color: black;
+    right: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-weight: bold;
+    font-size: 55px; 
+    transition: all 0.4s; 
+}
+#home:hover{
+    transform: scale(1.05);
+}
+#content{
+    width: 600px;
+    font-size: 1.1vw;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: normal;
+    line-height: 20px;
+    position: absolute;
+    bottom: 15%;
+    right: 6%;
+}
+#circle svg { 
+    position: absolute; left: 10; top: 0; width: 60%; height: 240px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: white;
+    }
+
+    @keyframes rotate {
+        from {
+          transform: rotate(360deg);
+        }
+        to {
+          transform: rotate(0);
+        }
+      }
+      
+
+
+#image{
+width: 80px;
+height: 80px;
+border-radius: 100%;
+margin-left: 418px;
+margin-top: 79px;
+}

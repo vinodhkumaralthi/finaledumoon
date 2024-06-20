@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./signup.css">
+    <script src="./signup.js" defer></script>
+</head>
+<body>
+    <form id="container">
+          <div id="details">
+              <h1>Sign Up</h1>
+              <input type="text" placeholder="Enter The Username" class="inp" id="mail" oninput="hideestatus()">
+              <p id="estatus"></p>
+              <input type="text" placeholder="Enter The Password" class="inp" id="pass1" oninput="hidepstatus()">
+              <input type="text" placeholder="Re Enter The Password" class="inp" id="pass2" oninput="hidepstatus()">
+              <p id="pstatus"></p>
+              <input type="button" value="Sign up" id="sub" onclick="checkEmail()">
+              <h4 onclick="openLogin()" id="goLogin">Already have an account?</h4>
+          </div>
+    </form>
+</body>
+</html>

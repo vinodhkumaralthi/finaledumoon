@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <script src="./login.js" defer></script>
+</head>
+<body>
+    <form id="container">
+        <h5 id="lstatus"></h5>
+          <div id="login">
+            <h1>Login Here!</h1>
+            <input type="text" placeholder="Enter Your User-Name" class="inp" id="user">
+            <input type="password" placeholder="Enter You Password" class="inp" id="pass">
+            <input type="submit"  id="sub" onclick="validateUser(event)">
+          </div>
+    </form>
+</body>
+</html>

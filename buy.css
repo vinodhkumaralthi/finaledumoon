@@ -1,0 +1,130 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imgcon{
+    width: 600px;
+    height: 500px;
+    /* background-color: cadetblue; */
+    box-shadow: 0px 0px 2px;
+}
+#fir{
+    width: 100%;
+    height: 50%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#cod{
+    margin-bottom: 10px;
+    width: 20%;
+    height: 10%;
+    /* background-color: #fed6e3; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#sec{
+    width: 100%;
+    height: 50%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#fir #prod{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: relative;
+    box-shadow: 0px 0px 2px;
+
+}
+#fir #tit{
+    width:40%;
+    height: 100px;
+    /* background-color: rgb(243, 235, 235); */
+}
+#fir #pri{
+   width: 25%;
+   height: 100px;
+   /* background-color: brown; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#fir #pri h1{
+    position: relative;
+    right: 10%;
+}
+#fir #prod #count{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#fir #prod #pimage{
+    width: 100%;
+    height: 100%;
+}
+#fir #pri #price{
+    width: 80%;
+    height: 30%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+#fir #prod #addrem{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#fir #prod #addrem input{
+    border: none;
+    width: 35px;
+    height: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color:#fed6e3;
+    box-shadow: 0px 0px 2px;
+}
+#sec #address{
+    width: 80%;
+    height: 30%;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+#sec #address::placeholder{
+    font-size: 16px;
+}
+#sec #placeorder{
+    width: 25%;
+    height: 15%;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px;
+    background-image: linear-gradient(135deg, #a8edea 10%, #fed6e3 100%);;
+}
